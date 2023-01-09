@@ -6,7 +6,7 @@ export class Firstclass extends Component {
    super();
     this.state={
       productName:"madurai",
-     quantity:1,
+     quantity:0,
     }
   }
   updatedata= () => {
@@ -18,8 +18,9 @@ export class Firstclass extends Component {
   render() {
 
     return (
-      <div>firstclass{this.props.name}
+      <div>firstclass
          {this.state.productName}{this.state.quantity}
+         
          <button onClick={()=> this.updatedata()}>click</button>
         <Secondclass name={"rupu"} getData={this.getData}/>
       </div>
